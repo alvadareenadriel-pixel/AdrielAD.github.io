@@ -201,4 +201,213 @@
 
 </body>
 </html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>📅 Jadwal Pelajaran</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2e7d32;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 600px;
+    }
+
+    thead {
+      background: #2e7d32;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    th {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #b0fa84;
+    }
+
+    tbody tr:hover {
+      background: #a5d6a7;
+      color: white;
+      transform: scale(1.01);
+      cursor: pointer;
+    }
+
+    /* Efek animasi masuk */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Jadwal Pelajaran (WIB)</h1>
+  
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Jam</th>
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>07:00 - 07:40</td>
+          <td>Upacara</td>
+          <td>Kejuruan</td>
+          <td>Bahasa Inggris</td>
+          <td>Kejuruan</td>
+        </tr>
+        <tr>
+          <td>07:40 - 08:20</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Bahasa Inggris</td>
+          <td>Kejuruan</td>
+        </tr>
+        <tr>
+          <td>08:20 - 09:00</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+        </tr>
+        <tr>
+          <td>09:00 - 09:40</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Bahasa Inggris</td>
+          <td>Bahasa Indonesia</td>
+        </tr>
+        <tr>
+          <td>09:40 - 10:00</td>
+          <td colspan="4">☕ Istirahat</td>
+        </tr>
+        <tr>
+          <td>10:00 - 10:40</td>
+          <td>Kejuruan</td>
+          <td>Matematika</td>
+          <td>Kejuruan</td>
+          <td>Pendidikan Agama Islam</td>
+        </tr>
+        <tr>
+          <td>10:40 - 11:20</td>
+          <td>Kejuruan</td>
+          <td>Matenatika</td>
+          <td>Kejuruan</td>
+          <td>Pendidikan Agama Islam</td>
+        </tr>
+        <tr>
+          <td>11:20 - 12:00</td>
+          <td>Kejuruan</td>
+          <td>Matematika</td>
+          <td>Kejuruan</td>
+          <td>Pendidikan Agama Islam</td>
+        </tr>
+        <tr>
+          <td>12:00 - 12:45</td>
+          <td colspan="4">🍱 Istirahat</td>
+        </tr>
+        <tr>
+          <td>12:45 - 13:25</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+        </tr>
+        <tr>
+          <td>13:25 - 14:05</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+        </tr>
+        <tr>
+          <td>14:05 - 14:45</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>PKK</td>
+          <td>Bahasa Korea</td>
+        </tr>
+        <tr>
+          <td>14:45 - 15:25</td>
+          <td>Kejuruan</td>
+          <td>Kejuruan</td>
+          <td>PKK</td>
+          <td>Bahasa Korea</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+
+  <!-- Tabel Jumat -->
+  <div class="table-container" style="max-width: 500px; margin: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Jam (WIB)</th>
+          <th>Jumat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>07:00 - 07:40</td><td>Pengajian</td></tr>
+        <tr><td>07:40 - 08:20</td><td>PKK</td></tr>
+        <tr><td>08:20 - 09:00</td><td>PKK</td></tr>
+        <tr><td>09:00 - 09:40</td><td>PKK</td></tr>
+        <tr><td>09:40 - 10:00</td><td>☕ Istirahat</td></tr>
+        <tr><td>10:00 - 10:40</td><td>Bahasa Indonea</td></tr>
+        <tr><td>10:40 - 11:20</td><td>Bahasa Indonesia</td></tr>
+        <tr><td>11:20 - 11:50</td><td>🍱 Istirahat</td></tr>
+        <tr><td>11:50 - 12:50</td><td>🍱 Istirahat</td></tr>
+        <tr><td>12:50 - 14:00</td><td>🍱 Istirahat</td></tr>
+        <tr><td>14:00 - 17:00</td><td>🎯 Ekstrakurikuler</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
+
 ```
